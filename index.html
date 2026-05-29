@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>PlaceAI Academy — Smart Placement Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo" id="nav-logo"><span>Place</span>AI <em>Academy</em></div>
+    <div class="nav-pills">
+      <button class="npill" id="np-p">📊 Predictor</button>
+      <button class="npill" id="np-c">🤖 AI Advisor</button>
+      <button class="npill" id="np-r">📄 Resume</button>
+      <button class="npill" id="np-co">🏢 Companies</button>
+      <button class="npill" id="np-iq">🎤 Interview Questions</button>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-stripe"></div>
+  <div class="hero-badge">🎓 India's Smartest Placement Preparation Platform</div>
+  <h1 class="hero-title">Master Your Path to<br/><span class="gold">Dream Placement</span><br/>with <span class="cyan">AI Intelligence</span></h1>
+  <p class="hero-desc">Get your personalised placement score, skill gap analysis, company-specific prep guides, and AI interview coaching — all in one platform.</p>
+
+  <div class="hero-btns">
+    <button class="btn-gold" id="h-p">→ Check My Score</button>
+    <button class="btn-ghost" id="h-c">🤖 Ask AI Advisor</button>
+    <button class="btn-ghost" id="h-r">📄 Resume Analysis</button>
+    <button class="btn-ghost" id="h-co">🏢 Company Criteria</button>
+    <button class="btn-ghost" id="h-iq">🎤 Interview Questions</button>
+  </div>
+  <div class="feat-pills">
+    <div class="fpill">📊 Placement Predictor</div>
+    <div class="fpill">🤖 24/7 AI Advisor</div>
+    <div class="fpill">📄 AI Resume Review</div>
+    <div class="fpill">🏢 12 Companies</div>
+    <div class="fpill">🎤 Interview Practice</div>
+  </div>
+</section>
+
+<!-- PREDICTOR -->
+<div class="pw" id="wpanel">
+  <div class="sec-wrap"><div class="sec-ico" style="background:#EEF3FF">📊</div><div><div class="sec-title">Placement Score Checker</div><div class="sec-sub">Answer 5 quick steps — get your personalised score, skill gaps and priority action plan</div></div></div>
+  <div class="prog-row"><div class="ps" id="ps1"></div><div class="ps" id="ps2"></div><div class="ps" id="ps3"></div><div class="ps" id="ps4"></div><div class="ps" id="ps5"></div><div class="plbl" id="plbl">Step 1 of 5</div></div>
+
+  <div class="scard on" id="s1">
+    <div class="step-tag">01/05 · Basics</div><div class="step-title">Let's start with you 👋</div><div class="step-sub">We'll personalise your analysis based on your profile</div>
+    <div class="fg"><div class="fl">Your name <span class="hint">optional</span></div><input type="text" id="fname" placeholder="e.g. Arjun, Priya..."/></div>
+    <div class="frow">
+      <div class="fg"><div class="fl">Branch</div><select id="fbranch"><option value="">Pick one</option><option>Computer Science</option><option>IT</option><option>Electronics & Comm</option><option>Electrical Engineering</option><option>Other</option></select></div>
+      <div class="fg"><div class="fl">Current year</div><select id="fyear"><option value="">Pick one</option><option>1st year</option><option>2nd year</option><option>3rd year</option><option>Final year</option></select></div>
+    </div>
+    <div class="fg"><div class="fl">Target company type</div><select id="ftarget"><option>FAANG / Tier-1 Product</option><option>Mid-size Tech / Startups</option><option>Service Companies</option><option>Anything works!</option></select></div>
+    <div class="step-btns"><button class="btn-gold-sm btn-next" id="s1n">Academics →</button></div>
+  </div>
+
+  <div class="scard" id="s2">
+    <div class="step-tag">02/05 · Academics</div><div class="step-title">The grades situation 📚</div><div class="step-sub">CGPA matters — but it is not the only thing</div>
+    <div class="slbox"><div class="sl-top"><span class="sl-label">CGPA (out of 10)</span><span class="sl-badge" id="fcgpa-v">7.0</span></div><div class="sl-track-wrap"><div class="sl-track"><div class="sl-fill" id="fcgpa-fill" style="width:70%"></div></div><input type="range" id="fcgpa" min="0" max="10" step="0.1" value="7"/></div><div class="sl-marks"><span>0.0</span><span>5.0</span><span>7.5</span><span>10.0</span></div></div>
+    <div class="fg"><div class="fl">Active backlogs</div><select id="fbl"><option value="0">Zero 🎉</option><option value="1">1</option><option value="2">2</option><option value="3">3 or more</option></select></div>
+    <div class="frow">
+      <div class="fg"><div class="fl">10th % <span class="hint">optional</span></div><input type="number" id="f10" min="0" max="100" placeholder="e.g. 88"/></div>
+      <div class="fg"><div class="fl">12th % <span class="hint">optional</span></div><input type="number" id="f12" min="0" max="100" placeholder="e.g. 82"/></div>
+    </div>
+    <div class="tog-row"><span class="tog-lbl">LinkedIn profile set up?</span><label class="tgl"><input type="checkbox" id="fli"/><span class="tsl"></span></label></div>
+    <div class="step-btns"><button class="btn-back" id="s2b">← Back</button><button class="btn-gold-sm btn-next" id="s2n">Coding →</button></div>
+  </div>
+
+  <div class="scard" id="s3">
+    <div class="step-tag">03/05 · Coding</div><div class="step-title">Your grind stats 💻</div><div class="step-sub">Be honest — no judgement here</div>
+    <div class="slbox"><div class="plat-h" style="margin-bottom:.68rem"><div class="plat-ico" style="background:#FEF3C7">🟡</div><div><div class="plat-n">LeetCode</div><div class="plat-d">Total problems solved</div></div></div><div class="sl-top"><span class="sl-label">Problems Solved</span><span class="sl-badge" id="flc-v">0</span></div><div class="sl-track-wrap"><div class="sl-track"><div class="sl-fill" id="flc-fill" style="width:0%"></div></div><input type="range" id="flc" min="0" max="500" step="5" value="0"/></div><div class="sl-marks"><span>0</span><span>100</span><span>250</span><span>500+</span></div></div>
+    <div class="plat-card"><div class="plat-h"><div class="plat-ico" style="background:#DCFCE7">🟢</div><div><div class="plat-n">HackerRank</div><div class="plat-d">Highest badge earned</div></div></div><div class="fl">Badge level</div><select id="fhr"><option value="0">Not active</option><option value="1">Bronze</option><option value="2">Silver</option><option value="3">Gold</option><option value="4">Platinum / Diamond</option></select></div>
+    <div class="slbox"><div class="plat-h" style="margin-bottom:.68rem"><div class="plat-ico" style="background:#EEF3FF">🔵</div><div><div class="plat-n">CodeChef / Codeforces</div><div class="plat-d">Contest rating</div></div></div><div class="sl-top"><span class="sl-label">Rating</span><span class="sl-badge" id="fcf-v" style="font-size:.8rem;min-width:85px">—</span></div><div class="sl-track-wrap"><div class="sl-track"><div class="sl-fill" id="fcf-fill" style="width:0%"></div></div><input type="range" id="fcf" min="0" max="2500" step="50" value="0"/></div><div class="sl-marks"><span>0</span><span>1000</span><span>1500</span><span>2500+</span></div></div>
+    <div class="step-btns"><button class="btn-back" id="s3b">← Back</button><button class="btn-gold-sm btn-next" id="s3n">Skills →</button></div>
+  </div>
+
+  <div class="scard" id="s4">
+    <div class="step-tag">04/05 · Skills</div><div class="step-title">What can you actually do? 🛠️</div><div class="step-sub">Tap only what you are genuinely comfortable with</div>
+    <div class="fg"><div class="fl">Languages</div><div class="bubble-cnt" id="slc">0 selected</div><div class="bubble-wrap" id="langs"><span class="bubble">C / C++</span><span class="bubble">Python</span><span class="bubble">Java</span><span class="bubble">JavaScript</span><span class="bubble">TypeScript</span><span class="bubble">Go</span><span class="bubble">Rust</span></div></div>
+    <div class="fg"><div class="fl">Frameworks &amp; Tools</div><div class="bubble-cnt" id="sfw">0 selected</div><div class="bubble-wrap" id="fws"><span class="bubble">React</span><span class="bubble">Node.js</span><span class="bubble">Django</span><span class="bubble">Spring Boot</span><span class="bubble">Flutter</span><span class="bubble">Docker</span><span class="bubble">SQL</span><span class="bubble">MongoDB</span><span class="bubble">Git</span><span class="bubble">AWS / Cloud</span><span class="bubble">System Design</span></div></div>
+    <div class="fg"><div class="fl">Specialisations</div><div class="bubble-cnt" id="ssp">0 selected</div><div class="bubble-wrap" id="specs"><span class="bubble">Machine Learning</span><span class="bubble">Deep Learning</span><span class="bubble">Data Science</span><span class="bubble">Cybersecurity</span><span class="bubble">DevOps</span><span class="bubble">Blockchain</span><span class="bubble">UI/UX</span></div></div>
+    <div class="step-btns"><button class="btn-back" id="s4b">← Back</button><button class="btn-gold-sm btn-next" id="s4n">Last step →</button></div>
+  </div>
+
+  <div class="scard" id="s5">
+    <div class="step-tag">05/05 · Experience</div><div class="step-title">Real-world experience 🚀</div><div class="step-sub">Last step — what have you actually built and done?</div>
+    <div class="slbox"><div class="sl-top"><span class="sl-label">Projects Built</span><span class="sl-badge" id="fpj-v">0</span></div><div class="sl-track-wrap"><div class="sl-track"><div class="sl-fill" id="fpj-fill" style="width:0%"></div></div><input type="range" id="fpj" min="0" max="10" step="1" value="0"/></div><div class="sl-marks"><span>0</span><span>2</span><span>5</span><span>10+</span></div></div>
+    <div class="fg"><div class="fl">Internship experience</div><select id="fintern"><option value="0">None yet</option><option value="1">1 internship</option><option value="2">2 internships</option><option value="3">3 or more</option></select></div>
+    <div class="fg"><div class="fl">Open source contributions</div><select id="foss"><option value="0">None</option><option value="1">1–2 PRs merged</option><option value="2">Active contributor</option></select></div>
+    <div class="tog-row"><span class="tog-lbl">Technical certifications? (AWS, GCP...)</span><label class="tgl"><input type="checkbox" id="fcert"/><span class="tsl"></span></label></div>
+    <div class="tog-row"><span class="tog-lbl">Participated in hackathons?</span><label class="tgl"><input type="checkbox" id="fhack"/><span class="tsl"></span></label></div>
+    <div class="tog-row"><span class="tog-lbl">Competitive programming contests?</span><label class="tgl"><input type="checkbox" id="fcon"/><span class="tsl"></span></label></div>
+    <div class="step-btns"><button class="btn-back" id="s5b">← Back</button><button class="btn-gold-sm btn-next" id="s5n">⚡ Calculate My Score!</button></div>
+  </div>
+
+  <div class="scard" id="sres">
+    <div class="result-top"><h3 id="res-hl">Your Placement Report</h3><p id="res-sub">Personalised analysis based on your profile</p>
+      <div class="ring-wrap"><div class="ring-w"><svg viewBox="0 0 190 190"><circle class="rbg" cx="95" cy="95" r="82"/><circle class="rfill" id="rring" cx="95" cy="95" r="82" stroke-dasharray="515" stroke-dashoffset="515"/></svg><div class="ring-c"><div class="rnum" id="rnum">0%</div><div class="rlbl">PLACEMENT SCORE</div></div></div>
+      <div class="vtag" id="vtag">Calculating...</div></div>
+    </div>
+    <div class="res-grid"><div class="res-card"><div class="res-card-ttl">Skill Gap Analysis</div><div id="gap-c"></div></div><div class="res-card"><div class="res-card-ttl">Company Readiness</div><div class="tier-list" id="tier-c"></div></div></div>
+    <div class="res-card" style="margin-bottom:1rem"><div class="res-card-ttl">📋 Priority Action Plan</div><ul class="act-list" id="act-c"></ul></div>
+    <div class="share-row"><button class="share-btn wb-btn" id="share-wa">📱 WhatsApp</button><button class="share-btn cp-btn" id="copy-score">📋 Copy</button><button class="share-btn dl-btn" id="dl-report">💾 Download</button></div>
+    <button class="restart-btn" id="restart-btn">↺ Retake With Different Answers</button>
+  </div>
+</div>
+
+<!-- CHAT -->
+<div class="pw" id="cpanel">
+  <div class="chat-hdr"><div class="chat-av">🤖</div><div class="chat-hdr-txt"><h3>PlaceAI Career Advisor</h3><p>Ask anything — placements, DSA, resume, companies, interviews...</p></div><div class="online-tag"><span class="green-dot"></span>Always Online</div></div>
+  <div class="chat-win" id="chat-win"></div>
+  <div class="qrow">
+    <button class="qb">Am I ready for placements?</button>
+    <button class="qb">How many LeetCode problems?</button>
+    <button class="qb">Resume tips for fresher</button>
+    <button class="qb">FAANG vs service company prep?</button>
+    <button class="qb">Top skills for 2026?</button>
+    <button class="qb">How to get an internship?</button>
+  </div>
+  <div class="cinrow"><input class="cin" id="chat-input" placeholder="Type your question here..."/><button class="csnd" id="chat-send">Send →</button></div>
+</div>
+
+<!-- RESUME -->
+<div class="pw" id="rpanel">
+  <div class="sec-wrap"><div class="sec-ico" style="background:#F5F3FF">📄</div><div><div class="sec-title">AI Resume Analysis</div><div class="sec-sub">Paste your resume and get an honest AI review with specific fixes.</div></div></div>
+  <div class="dropz" id="dropz"><input type="file" id="rfile" accept=".txt,.pdf" style="position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%"/><div style="font-size:2.1rem;margin-bottom:.6rem">📎</div><h3>Drop your resume here</h3><p>Click to browse — .txt works best</p><div style="display:flex;gap:.38rem;justify-content:center;margin-top:.58rem"><span style="background:#F5F3FF;border:1px solid #C4B5FD;color:#5B21B6;font-size:.67rem;padding:.15rem .55rem;border-radius:6px;font-family:Fira Code,monospace">.TXT</span><span style="background:#F5F3FF;border:1px solid #C4B5FD;color:#5B21B6;font-size:.67rem;padding:.15rem .55rem;border-radius:6px;font-family:Fira Code,monospace">.PDF</span></div></div>
+  <div class="ordiv">or paste your text below</div>
+  <div class="fg"><div class="fl">Resume text</div><textarea class="rta" id="rtext" placeholder="Paste your full resume — education, skills, projects, internships, achievements..."></textarea></div>
+  <div class="selrow">
+    <div class="fg"><div class="fl">Target role</div><select id="rrole"><option value="sde">Software Developer (SDE)</option><option value="ml">ML / AI Engineer</option><option value="data">Data Analyst</option><option value="fullstack">Full Stack Developer</option><option value="devops">DevOps / Cloud</option><option value="any">Any tech role</option></select></div>
+    <div class="fg"><div class="fl">Experience level</div><select id="rlvl"><option value="fresher">Fresher (0 exp)</option><option value="intern">Internship Seeker</option><option value="junior">Junior (1–2 yrs)</option></select></div>
+  </div>
+  <button class="res-analyze-btn" id="abtn"><span id="abtn-t">🔍 Analyse My Resume</span></button>
+  <div class="rres" id="rres"><div class="score-chips" id="rchips"></div><div id="rsecs"></div></div>
+</div>
+
+<!-- COMPANIES -->
+<div class="pw-wide" id="copanel">
+  <div class="co-hdr-card"><h2>🏢 Company Criteria Explorer</h2><p>Click any company → CGPA cutoff, 10th/12th %, interview rounds, key skills + personalised 30-day prep guide</p></div>
+  <div class="co-sr"><input class="co-sin" id="co-sin" type="text" placeholder="Search e.g. Google, TCS, Infosys, Swiggy..."/><button class="co-sbtn" id="co-sbtn">🔍 Search</button></div>
+  <div class="cat-row"><button class="cc on" data-cat="all">All Companies</button><button class="cc" data-cat="product">🚀 Product</button><button class="cc" data-cat="service">🔧 Service</button><button class="cc" data-cat="startup">⚡ Startups</button><button class="cc" data-cat="mnc">🌍 MNC</button><button class="cc" data-cat="finance">💰 Finance Tech</button></div>
+  <div class="co-grid" id="co-grid"></div>
+  <div class="co-det-wrap" id="co-det-wrap"></div>
+</div>
+
+<!-- INTERVIEW QUESTIONS -->
+<div class="pw" id="iqpanel">
+  <div class="iq-hdr-card"><h2>🎤 Interview Questions</h2><p>Get real interview questions — type your answer — receive instant AI feedback with scores and improvement tips</p></div>
+  <div class="iq-setup-card">
+    <div class="fg"><div class="fl">Interview Type</div><select id="iq-type"><option value="dsa">💻 DSA / Coding Interview</option><option value="hr">🤝 HR / Behavioural Interview</option><option value="cs">📚 Core CS (OS, DBMS, CN)</option><option value="system">🏗️ System Design</option><option value="project">📁 Project-Based Interview</option></select></div>
+    <div class="fg"><div class="fl">Difficulty Level</div><select id="iq-diff"><option value="easy">Easy — Service Companies / Freshers</option><option value="medium" selected>Medium — Mid-tier Tech</option><option value="hard">Hard — FAANG / Tier-1</option></select></div>
+    <button class="btn-gold-sm" style="width:100%;justify-content:center;margin-top:.5rem" id="iq-start-btn">🎯 Get My Question</button>
+  </div>
+  <div class="iq-q-card" id="iq-q-card">
+    <div class="iq-q-lbl" id="iq-q-lbl">DSA · Medium</div>
+    <div class="iq-q-text" id="iq-q-text"></div>
+    <div class="iq-hint-box" id="iq-hint-box"></div>
+    <textarea class="iq-ans" id="iq-ans" placeholder="Type your answer — explain your approach, code logic, or behavioural response..."></textarea>
+    <div class="iq-btn-row">
+      <button class="btn-out" id="iq-hint-btn">💡 Show Hint</button>
+      <button class="btn-prim" style="flex:2;justify-content:center" id="iq-eval-btn">🔍 Evaluate My Answer</button>
+    </div>
+  </div>
+  <div class="iq-fb-card" id="iq-fb-card">
+    <div style="font-family:Fira Code,monospace;font-size:.64rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:.78rem">AI Feedback</div>
+    <div class="iq-scores" id="iq-scores"></div>
+    <div id="iq-fb-text"></div>
+    <div style="display:flex;gap:.62rem;margin-top:.95rem">
+      <button class="btn-out" id="iq-retry-btn" style="flex:1">↺ Retry</button>
+      <button class="btn-prim" style="flex:1;justify-content:center" id="iq-next-btn">→ Next Question</button>
+    </div>
+  </div>
+</div>
+
+<button class="stbtn" id="stbtn">↑</button>
+<footer>
+  <div class="copy">© 2025 PlaceAI Academy — All Rights Reserved</div>
+  <span class="rajdeep">Rajdeep</span>
+  <div class="rights">Unauthorised copying or distribution is strictly prohibited. PlaceAI Academy™ is a registered product.</div>
+</footer>
+<div id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
